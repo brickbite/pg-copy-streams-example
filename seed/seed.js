@@ -14,13 +14,13 @@ var pool = new Pool(dbCreds);
  * CSV option:
  * file we end up using is not really csv. and need to add extra quotes in this file. can't use comma as delimiter since JSON is using it (data.csv in this repo wouldn't work). also need to escape extra slash.
  */
-// const filename = './seed/data-backslash-separated.csv';
+// const filename = './data-backslash-separated.csv';
 // const copyCommand = `COPY mytable FROM STDIN DELIMITER '\\' CSV HEADER`; // 
 
 /**
  * TEXT option:
  */
-const filename = './seed/dataText.txt';
+const filename = './dataText.txt';
 const copyCommand = `COPY mytable FROM STDIN WITH DELIMITER '|'`;
 
 /**
