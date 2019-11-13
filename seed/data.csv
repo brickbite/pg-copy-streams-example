@@ -1,0 +1,3 @@
+id,seller,objects
+30,Postgres,{"""relational""":1,"""comments""":[1,2,3]}
+50,Mongo,{"""relational""":0,"""comments""":[1,2,3]}

@@ -1,0 +1,19 @@
+{
+  "name": "pg-copy-streams-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clear": "psql -d mydb -a -f schema.sql",
+    "seed": "node ./seed/seed.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^7.12.1",
+    "pg-copy-streams": "^2.2.2"
+  }
+}
